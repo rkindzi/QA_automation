@@ -1,0 +1,3 @@
+com\Olybet\testCases\Base.class
+com\Olybet\testCases\LoginTestsCases.class
+com\Olybet\pageObjects\LoginPage.class
