@@ -1,0 +1,7 @@
+Automatinius testus galima paleisti naudojant cmd. Atėjus į projekto direktoriją ir paleidus: mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
+
+Trumpas aprašymas apie atliktus darbus:
+Sukurtas prisijungimas prie https://www.olybet.lt/ naudojant užduoties aprašyme pateiktus duomenis. Prisijungimo email yra saugomas "com.Olybet.testCases.Base" faile, slaptažodis .txt faile "Password", kuris yra projekto pagrindinėje 
+direktorijoje. Prisijungus yra tikrinama,kuri puslapio kalba yra nustatyta. Jeigu yra nustatyta LT arba RU, kalba yra pakeičiama į EN, kitu atveju kalba nėra keičiama.
+Po šių žingsių atidaroma kliento profilio informacija ir dalis jos patikrinama. Vėliau inicijuojamas slaptažodio keitimas - įrašomas senasis ir naujasis slaptažodžiai. Naujasis slaptažodis sugeneruojamas atsitiktiniu būdu ir išsaugomas
+"Password.txt" faile. Pakartotinai leidžiant automatinį testą yra naudojamas naujas slaptažodis.
